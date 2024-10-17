@@ -28,7 +28,22 @@ h2,
 h3 {
     text-wrap: balance;
 }
+@keyframes rainbow-underline {
+            0% { text-decoration-color: red; }
+            14% { text-decoration-color: orange; }
+            28% { text-decoration-color: yellow; }
+            42% { text-decoration-color: green; }
+            57% { text-decoration-color: blue; }
+            71% { text-decoration-color: indigo; }
+            85% { text-decoration-color: violet; }
+            100% { text-decoration-color: red; }
+        }
 
+        .rainbow-underline {
+            text-decoration: underline;
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
+            animation: rainbow-underline 3s infinite; /* Duración de la animación */
+        }
 p {
     text-wrap: pretty;
 }
@@ -63,7 +78,7 @@ main {
 
 .paper {
     
-    padding: 2rem;
+    padding: 0.3em;
     line-height: 1.5rem;
     right: 5px;
     z-index: -1;
